@@ -1,0 +1,24 @@
+:root{
+    --blanco: #ffff;
+    --primario: #ff0000;
+    --negro: #000000;
+    --complementario: #03f538;
+    --secundario: #550000;
+    --fuentePrincipal: 20rem;
+}
+html{
+    font-size: 62,5%;
+}
+body{
+    font-size: 16px;
+    font-family:'Sora', sans-serif;
+}
+.titulo{
+text-align: center;
+font-size: 3.8rem;
+color: var(--primario)
+}
+.titulo span{
+    font-size: 2rem;
+    color: var(--secundario)
+}

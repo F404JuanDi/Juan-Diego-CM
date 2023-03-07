@@ -4,7 +4,10 @@
     --negro: #000000;
     --complementario: #03f538;
     --secundario: #550000;
-    --fuentePrincipal: 20rem;
+    --fuentePrincipal: 2rem;
+}
+*, *::before, *:after{
+    box-sizing: inherit;
 }
 html{
     font-size: 62,5%;
@@ -14,11 +17,112 @@ body{
     font-family:'Sora', sans-serif;
 }
 .titulo{
-text-align: center;
-font-size: 3.8rem;
 color: var(--primario)
 }
 .titulo span{
     font-size: 2rem;
     color: var(--secundario)
+}
+h1{
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 2.8;
+}
+h3{
+    font-size: 2.4rem;
+}
+h1,h2,h3{
+    text-align: center;
+}
+.nav_principal{
+    background-color: var(--secundario);
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.nav a{
+    display: block;
+    text-align: center;
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: var(--fuentePrincipal);
+    font-weight: 700;
+    padding: 1rem;
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+}
+.nav a:hover{
+    color: var(--negro);
+    background-color: var(--primario);
+}
+.imagen_encabezado{
+    background-image: url("../img/Spirit-Blossom-Sett.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45rem;
+    position: relative;
+    background-position: center;
+}
+.contenido_encabezado{
+position: absolute;
+background: rgb(0 0 0 /65%);
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.ubicacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenido_encabezado h2,
+.contenido_encabezado p{
+    color: var(--blanco);
+    font-size: var(--fuentePrincipal);
+}
+.btn_contact{
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    width: 90%;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    width: auto;
+}
+.sombra{
+    -webkit-box-shadow: 0px 0px 20px 4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 20px 4px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 20px 4px rgba(0,0,0,0.75);
+}
+.contenedor_main{
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    column-gap: 1rem;
+    align-items: baseline;
+}
+@media (min-width: 780px){
+    .nav{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .contenedor_main{
+        display: grid;
+        grid-template-columns: repeat(3 1fr);
+        column-gap: 1rem;
+        align-items: baseline;
+    }
 }

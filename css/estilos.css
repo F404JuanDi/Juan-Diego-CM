@@ -119,6 +119,79 @@ justify-content: center;
     text-align: center;
 }
 .contenedor_main .iconos{
+    height: 10rem;
+    width: 10rem;
+    background-color: var(--primario);
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer{
+    text-align: center;
+}
+.forms{
+    background-color: var(--grisclaro);
+    width: min(60rem,100%);
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.forms fieldset{
+    border: none;
+}
+.forms fieldset legend{
+    margin: 0 auto;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    color: var(--primario);
+}
+.campo{
+    margin-bottom: 1rem;
+}
+.campo label{
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+.input-text{
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+.servicio{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.btn_form{
+    display: flex;
+    justify-content: center;
+}
+@media (min-width: 770px){
+    .nav{
+        flex-direction: row;
+        justify-content: space-between;
+    
+    }
+    .btn_form{
+        justify-content: flex-end;
+    }
+    .btn_form .btn_contact{
+    width: auto;
+    }
+
+.contenedor_main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    align-items: baseline;
+}
+.contenedor_main .iconos{
     height: 15rem;
     width: 15rem;
     background-color: var(--primario);
@@ -127,99 +200,6 @@ justify-content: center;
     justify-content: space-evenly;
     align-items: center;
 }
-
-.forms{
-    background-color: var(--grisclaro);
-    width: min(60rem,100%);
-    margin: 0 auto;
-    padding: 2rem;
-    border-radius: 1rem;
 }
 
-.forms fieldset{
-    border: none;
-}
 
-.forms fieldset legend{
-    margin: 0 auto;
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-bottom: 3rem;
-    color:var(--primario);
-}
-
-.campo{
-    margin-bottom: 1rem;
-}
-
-.campo label{
-    font-weight: bold;
-    margin-bottom: .5rem;
-    display: block;
-}
-
-.input_text{
-    width: 100%;
-    border: none;
-    padding: 1.5rem;
-    border-radius: .5rem;
-}
-
-@media (min-width: 768px){
-
-    .btn_form{
-
-        justify-content: flex-end;
-    }
-    .btn_form .btn_contact{
-
-    width: auto;
-    }
-
-}
-.btn_form{
-    display: flex;
-    justify-content: center;
-}
-
-footer{
-    text-align: center;
-}
-    .nav{
-        flex-direction: row;
-        justify-content: space-between;
-
-}
-.contenedor_main{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 2rem;
-    align-items: baseline;
-}
-.contenedor_main h3{
-color: var(--secundario);
-font-weight: normal;
-}
-
-.contenedor_main p{
-line-height: 2;
-text-align: center;
-font-size: 1.2rem;
-}
-
-.contenedor_main .iconos{
-height: 15rem;
-width: 15rem;
-background-color: var(--primario);
-border-radius: 50%;
-display: flex;
-justify-content: space-evenly;
-align-items: center;
-}
-
-.servicio{
-display: flex;
-flex-direction: column;
-align-items: center;
-}

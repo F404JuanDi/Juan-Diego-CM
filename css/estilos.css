@@ -193,6 +193,10 @@ align-items: center;
 .persona{
     text-align: center;
 }
+.persona h3{
+    color: var(--secundario);
+    font-weight: normal;
+}
 .persona p{
     line-height: 2;
     margin: 2rem;

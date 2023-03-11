@@ -173,7 +173,42 @@ align-items: center;
     padding: 2rem;
     border-radius: 1rem;
 }
+.referencia{
+    margin: 0 auto;
+    text-align: center;
+}
 
+.proyecto h3{
+    color: var(--secundario);
+    font-weight: normal;
+}
+.proyecto p{
+    line-height: 2;
+    text-align: justify;
+    margin: 2rem;
+}
+.oscuridad{
+    background-color: var(--secundario);
+}
+.persona{
+    text-align: center;
+}
+.persona p{
+    line-height: 2;
+    margin: 2rem;
+}
+.persona img{
+    width: 12rem;
+    height: 7rem;
+    border-radius: 50%;
+    box-shadow: 0px 5px 15px 0px;
+}
+@media (min-width: 392px){
+.referencia iframe{
+    width: 38rem;
+    height: 20rem;
+}
+}
 @media (min-width: 770px){
     .nav{
         flex-direction: row;
@@ -193,6 +228,12 @@ align-items: center;
     column-gap: 2rem;
     align-items: baseline;
 }
+.videos{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+column-gap: 2rem;
+align-items: baseline;
+}
 .contenedor_main .iconos{
     height: 15rem;
     width: 15rem;
@@ -209,6 +250,10 @@ align-items: center;
     padding: 2rem;
     border-radius: 1rem;
 }
+.persona img{
+    width: 24rem;
+    height: 14rem;
+    border-radius: 50%;
 }
-
+}
 

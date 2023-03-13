@@ -202,7 +202,7 @@ footer {
 
 .forms {
     background-color: var(--grisclaro);
-    width: min(auto, 100%);
+    width: min(auto, 90%);
     margin: 0 auto;
     padding: 2rem;
     border-radius: 1rem;
@@ -321,7 +321,7 @@ footer {
 
     .forms {
         background-color: var(--grisclaro);
-        width: min(60rem, 100%);
+        width: min(60rem, 90%);
         margin: 0 auto;
         padding: 2rem;
         border-radius: 1rem;

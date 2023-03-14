@@ -146,6 +146,7 @@ h3 {
 }
 
 .contenedor_main .iconos {
+    color: var(--blanco);
     height: 10rem;
     width: 10rem;
     background-color: var(--primario);
